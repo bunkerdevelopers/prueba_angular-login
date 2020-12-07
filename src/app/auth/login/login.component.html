@@ -1,0 +1,17 @@
+<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5%" style="height: 100vh; padding: 40px; width: 100%; background-color: #e5e5e5;">
+    <div style="width: 50%;">
+        <div fxFlex="50" class="logo">
+            <img src="/assets/img/logo2.png" alt="" style="width: 100%;">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="center center" fxFlex="50" fxLayoutGap="50px" class="login">
+            <button (click)="openDialog()" class="button facebook" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="15%">
+                <img src="/assets/img/facebook-logo3.png" alt="">
+                <span class="letter">Iniciar sesion con Facebook</span>
+            </button>
+            <button (click)="openDialog()" class="button google" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="15%">
+                <img src="/assets/img/google-logo2.png" alt="">
+                <span class="letter">Iniciar sesion con Google</span>
+            </button>
+        </div>
+    </div>
+</div>

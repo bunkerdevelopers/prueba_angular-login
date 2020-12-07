@@ -1,0 +1,25 @@
+<form [formGroup]="form" fxLayout="row" fxLayoutAlign="center center" (ngSubmit)="login" class="pad-modal">
+    <div fxLayout="column" fxLayoutAlign="space-around center" fxFlex fxLayoutGap="30px" style="width: 100%;">
+        <p style="font-size:20px; padding-bottom: 10px;"><b>Logueo</b></p>
+        <div fxLayout="column" style="width: 100%;">
+            <mat-form-field fxFlex>
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="user" placeholder="Ingrese correo">
+            </mat-form-field>
+            <small *ngIf="invalidInput('user')" class="error">'Ingresar usuario'</small>
+        </div>
+        <div fxLayout="column" style="width: 100%;">
+            <mat-form-field fxFlex>
+                <mat-label>Ingresa tu clave</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <small *ngIf="invalidInput('password')" class="error">'Ingresar Password'</small>
+        </div>
+        <button type="submit" (click)="login()" class="button-log"  [disabled]="flagButton" [ngClass]="{'button-disabled': flagButton}">Log in</button>
+    </div>
+
+</form>

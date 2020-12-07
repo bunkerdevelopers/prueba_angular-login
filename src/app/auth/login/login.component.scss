@@ -1,0 +1,42 @@
+.facebook{
+    background-color: #3b5998;
+    box-shadow: 3px 3px grey;
+}
+.facebook:hover{
+    background-color :#4e71ba;
+    box-shadow: 3px 3px grey;
+}
+
+.facebook:focus{
+    outline: none;
+}
+
+.letter{
+    font-size: 20px;
+    color: white;
+}
+
+.google{
+    background-color: #008ad3;
+    box-shadow: 3px 3px grey;
+}
+
+.google:hover{
+    background-color: #09aaff;
+    box-shadow: 3px 3px grey;
+}
+.google:focus{
+    outline: none;
+}
+
+.logo{
+    background-color: #008a7e6e;
+    border-right: solid 3px #008a7ed9 ;
+    padding: 30px;
+}
+
+.login{
+    background-color: #a8dac159;
+    border-radius: 0px 4px 4px 0px;
+    padding: 30px;
+}
